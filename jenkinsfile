@@ -5,7 +5,7 @@ pipeline {
         DOCKERFILE_PATH = './webserver'
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DOCKER_DEV_REPO = 'aravindit/dev'
-        DOCKER_PROD_REPO = 'devops-build:latest'
+        DOCKER_PROD_REPO = 'aravindit/prod'
         
     }
 
