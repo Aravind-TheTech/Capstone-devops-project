@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Aravind-TheTech/capstone-project.git'
+                git 'https://github.com/Aravind-TheTech/Capstone-devops-project.git'
             }
         }
 		
