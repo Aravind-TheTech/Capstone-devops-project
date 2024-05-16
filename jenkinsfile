@@ -26,14 +26,14 @@ pipeline {
              steps {
                 script {  //push to dev repo
 				
- 				if (env.BRANCH_NAME == 'dev') {
+ 				when (env.BRANCH_NAME == 'dev') {
 				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
                         docker.image("${DOCKER_DEV_REPO}:latest").push() 
 						
                     }
 					
-				if (env.BRANCH_NAME == 'prod') {
+				when (env.BRANCH_NAME == 'prod') {
 				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
                         docker.image("${DOCKER_DEV_REPO}:latest").push() 	
