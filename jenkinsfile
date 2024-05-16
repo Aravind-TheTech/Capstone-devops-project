@@ -41,7 +41,7 @@ pipeline {
         stage('deploy to docker hub') {
             steps {
                 script{ 
-                        sh '/home/ubuntu/Capstone-devops-project/doc_push.sh'
+                        sh 'sudo /home/ubuntu/Capstone-devops-project/doc_push.sh'
            } 
         }
      }
