@@ -6,9 +6,9 @@ pipeline {
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DEV_REPO = 'aravindit/dev'
         PROD_REPO = 'aravindit/prod'
-		DOCKER_IMAGE = 'webapp'
+	DOCKER_IMAGE = 'webapp'
         DEV_TAG = dev
-		PROD_TAG = prod
+	PROD_TAG = prod
     }
 
     stages {
@@ -18,14 +18,8 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                sh './build.sh' //build command//
-            }
-        }
-
         stage('Deploy Docker Image') {
-            {
+            
             steps {
                 script {
                     // Check if the branch is dev
@@ -63,5 +57,4 @@ pipeline {
          }
       }
     }
-  }
-}
+ }
