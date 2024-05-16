@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERFILE_PATH = '/home/ubuntu/Capstone-devops-project/webserver'
+        DOCKERFILE_PATH = './webserver'
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DEV_REPO = 'aravindit/dev'
         PROD_REPO = 'aravindit/prod'
@@ -20,7 +20,7 @@ pipeline {
 		
 		stage('Build Docker Image') {
             steps {
-                sh 'sudo /home/ubuntu/Capstone-devops-project/build.sh'
+                sh 'sudo ./build.sh'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
         stage('deploy to docker hub') {
             steps {
                 script{ 
-                        sh 'sudo /home/ubuntu/Capstone-devops-project/doc_push.sh'
+                        sh 'sudo ./doc_push.sh'
            } 
         }
      }
