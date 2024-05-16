@@ -7,8 +7,8 @@ pipeline {
         DEV_REPO = 'aravindit/dev'
         PROD_REPO = 'aravindit/prod'
 	DOCKER_IMAGE = 'webapp'
-        DEV_TAG = dev
-	PROD_TAG = prod
+        DEV_TAG = 'dev'
+	PROD_TAG = 'prod'
     }
 
     stages {
@@ -49,7 +49,7 @@ pipeline {
                 }
             }
         }
-     }
+ 
         stage('deploy the container to server') {
           steps {
             script{ 
@@ -57,4 +57,5 @@ pipeline {
          }
       }
     }
- }
+  }
+}
