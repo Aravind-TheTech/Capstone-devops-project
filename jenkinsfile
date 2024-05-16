@@ -17,14 +17,8 @@ pipeline {
                 git 'https://github.com/Aravind-TheTech/Capstone-devops-project.git'
             }
         }
-	stage('Build') {
-            steps {
-                dir('scripts') {
-                    sh 'cd /home/ubuntu/Capstone-project-dev'
-                }
-            }
-        }
-		stage('Build Docker Image') {
+	
+     stage('Build Docker Image') {
             steps {
                 sh 'sudo /home/ubuntu/project-1/Capstone-devops-project/build.sh'  //build
             }
