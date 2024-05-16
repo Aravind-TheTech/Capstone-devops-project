@@ -8,7 +8,7 @@ DEV_TAG="dev"
 PROD_TAG="prod"
 
 # Check if the current branch is 'dev'
-if [ "$GIT_BRANCH" == "origin/dev" ]; then
+if [[ $GIT_BRANCH == "origin/dev" ]]; then
     
     # Tag and push the Docker image to dev repository with dev tag
     docker tag "$DOCKER_IMAGE" "$DEV_REPO:$DEV_TAG"
