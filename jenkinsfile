@@ -24,9 +24,9 @@ pipeline {
 
         stage('Deploy Docker Image') {
              steps {
-                script {
+                script {  //push to dev repo
 				
-				if (env.BRANCH_NAME == 'dev') {
+ 				if (env.BRANCH_NAME == 'dev') {
 				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
                         docker.image("${DOCKER_DEV_REPO}:latest").push() 
