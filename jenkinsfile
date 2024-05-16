@@ -7,9 +7,8 @@ pipeline {
                 // Clean the workspace
                 cleanWs()
             }
-        }
-        stage('Build') {
-            steps {
-                // Your build steps here
-            }
-        }
+        }    
+    }
+}
+
+    
