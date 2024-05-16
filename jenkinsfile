@@ -18,25 +18,30 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh './build.sh' //build command//
+                sh './build.sh'
             }
         }
 
         stage('Deploy Docker Image') {
              steps {
                 script {
+				
+				if (env.BRANCH_NAME == 'dev') {
+				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
-                        docker.image("${DOCKER_DEV_REPO}:latest").push()
+                        docker.image("${DOCKER_DEV_REPO}:latest").push() 
+						
                     }
-                }
+					
+				if (env.BRANCH_NAME == 'prod') {
+				
+                    docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
+                        docker.image("${DOCKER_DEV_REPO}:latest").push() 	
+                  }
+               }
             }
+          }
         }
-        stage('deploy the container to server') {
-          steps {
-            script{ 
-               sh './deploy.sh'
-         }
       }
     }
   }
-}
