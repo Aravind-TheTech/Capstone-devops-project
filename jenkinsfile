@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKERFILE_PATH = '/home/ubuntu/Capstone-devops-project/build.sh/webserver'
+        DOCKERFILE_PATH = '/home/ubuntu/Capstone-devops-project/webserver'
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DEV_REPO = 'aravindit/dev'
         PROD_REPO = 'aravindit/prod'
-		DOCKER_IMAGE = 'webapp'
+	DOCKER_IMAGE = 'webapp'
         DEV_TAG = 'dev'
-		PROD_TAG = 'prod'
+	PROD_TAG = 'prod'
     }
 
     stages {
