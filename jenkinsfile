@@ -41,7 +41,7 @@ pipeline {
         stage('build and deploy to docker hub') {
             steps {
                 script{ 
-                        sh './build_deploy.sh'
+                        sh './doc_push.sh'
            } 
         }
      }
