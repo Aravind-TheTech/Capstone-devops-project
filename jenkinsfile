@@ -6,7 +6,7 @@ pipeline {
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DOCKER_DEV_REPO = 'aravindit/dev'
         DOCKER_PROD_REPO = 'aravindit/prod'
-        
+        BRANCH_NAME = 'dev' 'master'
     }
 
     stages {
@@ -26,14 +26,14 @@ pipeline {
              steps {
                 script {  //push to dev repo
 				
- 				when (env.BRANCH_NAME == 'dev') {
+ 				if (env.BRANCH_NAME == 'dev') {
 				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
                         docker.image("${DOCKER_DEV_REPO}:latest").push() 
 						
                     }
 					
-				when (env.BRANCH_NAME == 'prod') {
+				if (env.BRANCH_NAME == 'prod') {
 				
                     docker.withRegistry('https://registry.hub.docker.com', 'doc-creds') {
                         docker.image("${DOCKER_DEV_REPO}:latest").push() 	
