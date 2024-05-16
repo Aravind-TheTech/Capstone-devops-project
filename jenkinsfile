@@ -38,10 +38,10 @@ pipeline {
                 }
 			}
            
-        stage('build and deploy to docker hub') {
+        stage('deploy to docker hub') {
             steps {
                 script{ 
-                        sh './doc_push.sh'
+                        sh '~/Capstone-devops-project/doc_push.sh'
            } 
         }
      }
