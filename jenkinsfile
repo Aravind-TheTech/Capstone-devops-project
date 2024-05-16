@@ -6,9 +6,9 @@ pipeline {
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DEV_REPO = 'aravindit/dev'
         PROD_REPO = 'aravindit/prod'
-	DOCKER_IMAGE = 'webapp'
+		DOCKER_IMAGE = 'webapp'
         DEV_TAG = 'dev'
-	PROD_TAG = 'prod'
+		PROD_TAG = 'prod'
     }
 
     stages {
@@ -18,44 +18,26 @@ pipeline {
             }
         }
 
-        stage('Deploy Docker Image') {
+        stage('docker hub login') {
             
             steps {
                 script {
-                    // Check if the branch is dev
-                    if ($GIT_BRANCH == 'dev') {
-                        // Login to Docker Hub using credentials
+                   
                         withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials-id', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
                             sh "echo \"$DOCKER_PASSWORD\" | docker login -u \"$DOCKER_USERNAME\" --password-stdin"
                             
-                            // Build and push the Docker image to dev repository with dev tag
-                            sh "docker build -t ${DOCKER_IMAGE}:${DEV_TAG} ."
-                            sh "docker tag ${DOCKER_IMAGE}:${DEV_TAG} ${DEV_REPO}:${DEV_TAG}"
-                            sh "docker push ${DEV_REPO}:${DEV_TAG}"
                         }
                     }
-                    // Check if the branch is master
-                    if ($GIT_BRANCH == 'master') {
-                        // Login to Docker Hub using credentials
-                        withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials-id', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                            sh "echo \"$DOCKER_PASSWORD\" | docker login -u \"$DOCKER_USERNAME\" --password-stdin"
-                            
-                            // Build and push the Docker image to prod repository with prod tag
-                            sh "docker build -t ${DOCKER_IMAGE}:${PROD_TAG} ."
-                            sh "docker tag ${DOCKER_IMAGE}:${PROD_TAG} ${PROD_REPO}:${PROD_TAG}"
-                            sh "docker push ${PROD_REPO}:${PROD_TAG}"
-                        }
-                    }
+                    
                 }
-            }
+           
+        stage('build and deploy to docker hub') {
+            steps {
+                script{ 
+                        sh './build_deploy.sh'
+           } 
         }
- 
-        stage('deploy the container to server') {
-          steps {
-            script{ 
-               sh './deploy.sh'
-         }
-      }
-    }
-  }
-}
+     }
+   }
+ }
+} 
