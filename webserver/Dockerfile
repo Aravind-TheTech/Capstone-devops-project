@@ -5,7 +5,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy the website content from the host machine
-COPY . /home/ubuntu/Capstone-devops-project/webserver  
+COPY . .  
 
 # Start the Nginx web server
 CMD ["nginx", "-g", "daemon off;"]
