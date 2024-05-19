@@ -20,7 +20,7 @@ pipeline {
 	
      stage('Build Docker Image') {
             steps {
-                sh 'sudo /home/ubuntu/project-1/Capstone-devops-project/build.sh' / ///build
+                sh 'sudo /home/ubuntu/project-1/Capstone-devops-project/build.sh' //build
             }
         }
 
