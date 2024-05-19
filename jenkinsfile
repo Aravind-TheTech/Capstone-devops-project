@@ -44,6 +44,13 @@ pipeline {
                         sh '/home/ubuntu/Capstone-devops-project/doc_push.sh'
            } 
         }
+     } 
+	stage('deploy to server') {
+            steps {
+                script{ 
+                        sh 'docker-compose.sh'
+           } 
+        }
      }
   }
 } 
