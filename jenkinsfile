@@ -48,7 +48,7 @@ pipeline {
 	stage('deploy to server') {
             steps {
                 script{ 
-                        sh 'docker-compose.sh'
+                        sh '/home/ubuntu/Capstone-devops-project/docker-compose.sh'
            } 
         }
      }
