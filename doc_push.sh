@@ -16,7 +16,7 @@ if [[ $GIT_BRANCH == "origin/dev" ]]; then
 
 
 # Check if the current branch is 'master' (assuming the master branch is where merges from dev occur)
-elif [ "$GIT_BRANCH" == "origin/master" ]; then
+elif [ "$GIT_BRANCH" == "origin/master" ]; then //change
     
     # Tag and push the same Docker image to prod repository with prod tag
     docker tag "$DOCKER_IMAGE" "$PROD_REPO:$PROD_TAG"
