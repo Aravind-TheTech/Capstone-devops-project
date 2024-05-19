@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+
+    environment {
+
+        DOCKER_COMPOSE_FILE = './docker-compose.yml'
+        DEV_REPO = 'aravindit/dev'
+        PROD_REPO = 'aravindit/prod'
+	DOCKER_IMAGE = 'webapp'
+        DEV_TAG = 'dev'
+	PROD_TAG = 'prod'
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/Aravind-TheTech/Capstone-devops-project.git'
+            }
+        }
+	
+     stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t ${DOCKER_IMAGE}:latest /home/ubuntu/Capstone-devops-project/webserver' //build
+            }
+        }
+
+        stage('docker hub login') {
+            
+            steps {
+                script {
+                   
+                        withCredentials([usernamePassword(credentialsId: 'doc-creds', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                            sh "echo \"$DOCKER_PASSWORD\" | docker login -u \"$DOCKER_USERNAME\" --password-stdin"
+                            
+                        }
+                    }
+                    
+                }
+			}
+           
+        stage('deploy to docker hub') {
+            steps {
+                script{ 
+                        sh '/home/ubuntu/Capstone-devops-project/doc_push.sh'
+           } 
+        }
+     } 
+	stage('deploy to server') {
+            steps {
+                script{ 
+                        sh '/home/ubuntu/Capstone-devops-project/docker-compose.sh'
+           } 
+        }
+     }
+  }
+} 
