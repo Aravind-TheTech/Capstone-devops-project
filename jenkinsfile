@@ -20,7 +20,7 @@ pipeline {
 	
      stage('Build Docker Image') {
             steps {
-                sh './build.sh' //build
+                sh '/home/ubuntu/Capstone-devops-project/build.sh' //build
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
         stage('deploy to docker hub') {
             steps {
                 script{ 
-                        sh './doc_push.sh'
+                        sh '/home/ubuntu/Capstone-devops-project/doc_push.sh'
            } 
         }
      }
