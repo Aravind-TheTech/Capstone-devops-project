@@ -1,6 +1,6 @@
 version: "3.8"
 services:
  webserver:
-    build: ./webserver
+    build: /home/ubuntu/Capstone-devops-project/webserver
     ports:
     - 80:80
