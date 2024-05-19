@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+
 	DOCKER_IMAGE = 'webapp'
         DOCKER_COMPOSE_FILE = './docker-compose.yml'
         DEV_REPO = 'aravindit/dev'
