@@ -20,7 +20,8 @@ pipeline {
 	
      stage('Build Docker Image') {
             steps {
-                sh 'docker build -t ${DOCKER_IMAGE}:latest /home/ubuntu/Capstone-devops-project/webserver' //building
+                sh 'DOCKER_IMAGE=webapp
+                    docker build -t ${DOCKER_IMAGE}:latest /home/ubuntu/Capstone-devops-project/webserver .' //building
             }
         }
 
