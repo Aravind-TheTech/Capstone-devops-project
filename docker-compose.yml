@@ -1,6 +1,11 @@
 version: "3.8"
+networks:
+ monitoring:
+    driver: bridge
 services:
  webapp:
     image: "aravindit/prod:prod"
     ports:
     - 80:80
+    networks:
+    - monitoring
