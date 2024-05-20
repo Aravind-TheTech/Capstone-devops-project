@@ -1,6 +1,6 @@
 version: "3.8"
 services:
- webserver:
-    build: /home/ubuntu/Capstone-devops-project/webserver
+ webapp:
+    image: "aravindit/prod:prod"
     ports:
     - 80:80
