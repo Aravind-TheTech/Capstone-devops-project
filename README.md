@@ -50,5 +50,6 @@ Docker hub:
 <img width="1012" alt="dockerhub-dev" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/03c56507-67c9-4797-a350-1bb66713c64d">
 <img width="1028" alt="image" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e57fb0a-b047-46d3-a249-332f2e27668e">
 
-Monitoring the application and host server:<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
-<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
+Monitoring the application and host server:
+<img width="1127" alt="host monitor" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/ab9ef0c6-cfbc-43b3-bc42-c537fbb361f3">
+
