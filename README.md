@@ -34,8 +34,6 @@ Git commands:
 
 <img width="603" alt="merge" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/6beae086-6bdf-400c-8475-40e366a25b1f">
 <img width="603" alt="merge" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/6beae086-6bdf-400c-8475-40e366a25b1f">
-<img width="1127" alt="host monitor" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/408f6c06-ba75-447d-8d1b-ee0883fded60">
-<img width="1127" alt="host monitor" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/408f6c06-ba75-447d-8d1b-ee0883fded60">
 <img width="636" alt="git push" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/c33d50f0-0fd8-4302-9800-359e1871f09c">
 <img width="636" alt="git push" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/c33d50f0-0fd8-4302-9800-359e1871f09c">
 <img width="638" alt="Git commands" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/85efd274-fe29-4ec7-baa1-4331ea585414">
