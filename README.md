@@ -1,12 +1,14 @@
-<img width="1115" alt="react app" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/594da9bc-c41c-4647-8033-1feba58dd040"><img width="1115" alt="react app" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/594da9bc-c41c-4647-8033-1feba58dd040"># Capstone-devops-project 
+# Capstone-devops-project 
 
 Deployed-site URL - http://34.210.65.148:80
 
 
 <img width="1115" alt="react app" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/e2f3955b-e9af-400f-8413-d65c27fd7e73">
-<img width="1115" alt="react app" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/e2f3955b-e9af-400f-8413-d65c27fd7e73">
+
 
 docker image names - aravindit/dev:dev  aravindit/pro:prod
+
+
 
 Jenkins Screenshots:
 <img width="842" alt="Screenshot 2024-05-19 224928" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/9c709084-c920-4940-aff1-148a4e9e458f">
@@ -18,7 +20,11 @@ Jenkins Screenshots:
 <img width="508" alt="Screenshot 2024-05-19 224959" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/7e14338c-884a-4b26-bdb1-6d7bf6795930">
 <img width="508" alt="Screenshot 2024-05-19 224959" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/7e14338c-884a-4b26-bdb1-6d7bf6795930">
 
+
+
+
 Git commands:
+
 <img width="603" alt="merge" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/6beae086-6bdf-400c-8475-40e366a25b1f">
 <img width="603" alt="merge" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/6beae086-6bdf-400c-8475-40e366a25b1f">
 <img width="1127" alt="host monitor" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/408f6c06-ba75-447d-8d1b-ee0883fded60">
