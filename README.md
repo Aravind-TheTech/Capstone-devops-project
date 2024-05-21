@@ -20,6 +20,15 @@ Jenkins Screenshots:
 <img width="508" alt="Screenshot 2024-05-19 224959" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/7e14338c-884a-4b26-bdb1-6d7bf6795930">
 <img width="508" alt="Screenshot 2024-05-19 224959" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/7e14338c-884a-4b26-bdb1-6d7bf6795930">
 
+when merged:
+<img width="1108" alt="pipeline-success" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/199b5a38-39aa-4d6c-a6da-e32cfc0b347f">
+<img width="1108" alt="pipeline-success" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/199b5a38-39aa-4d6c-a6da-e32cfc0b347f">
+![Screenshot 2024-05-20 210245](https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a837a874-915f-4ba7-af81-8a74cb7b8ed8)
+![Screenshot 2024-05-20 210245](https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a837a874-915f-4ba7-af81-8a74cb7b8ed8)
+![Screenshot 2024-05-20 210251](https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/c32308f4-ff34-454f-9c45-b6ca2dce365d)
+![Screenshot 2024-05-20 210251](https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/c32308f4-ff34-454f-9c45-b6ca2dce365d)
+
+
 
 
 
