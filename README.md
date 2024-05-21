@@ -42,4 +42,4 @@ Docker hub:
 <img width="1012" alt="dockerhub-dev" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/03c56507-67c9-4797-a350-1bb66713c64d">
 <img width="1012" alt="dockerhub-dev" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/03c56507-67c9-4797-a350-1bb66713c64d">
 <img width="1028" alt="image" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e57fb0a-b047-46d3-a249-332f2e27668e">
-<img width="1028" alt="image" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e57fb0a-b047-46d3-a249-332f2e27668e">
+
