@@ -51,3 +51,8 @@ Docker hub:
 Monitoring the application and host server:
 <img width="1127" alt="host monitor" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/ab9ef0c6-cfbc-43b3-bc42-c537fbb361f3">
 
+SG - inbound rule:
+<img width="1075" alt="image" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/3e46e403-c8c2-41ae-8525-c562c78abba4">
+
+
+
