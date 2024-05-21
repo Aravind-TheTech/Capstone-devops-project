@@ -13,8 +13,6 @@ docker image names - aravindit/dev:dev  aravindit/pro:prod
 Jenkins Screenshots:
 <img width="842" alt="Screenshot 2024-05-19 224928" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/9c709084-c920-4940-aff1-148a4e9e458f">
 <img width="842" alt="Screenshot 2024-05-19 224928" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/9c709084-c920-4940-aff1-148a4e9e458f">
-<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
-<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
 <img width="647" alt="doc-dev-push-log" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e7c0109-dc7d-4352-8f66-fcc33037ad68">
 <img width="647" alt="doc-dev-push-log" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e7c0109-dc7d-4352-8f66-fcc33037ad68">
 <img width="508" alt="Screenshot 2024-05-19 224959" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/7e14338c-884a-4b26-bdb1-6d7bf6795930">
@@ -52,3 +50,5 @@ Docker hub:
 <img width="1012" alt="dockerhub-dev" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/03c56507-67c9-4797-a350-1bb66713c64d">
 <img width="1028" alt="image" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/8e57fb0a-b047-46d3-a249-332f2e27668e">
 
+Monitoring the application and host server:<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
+<img width="800" alt="Screenshot 2024-05-19 224801" src="https://github.com/Aravind-TheTech/Capstone-devops-project/assets/160785236/a1e06c4d-fe99-4f13-97eb-520574908f6f">
